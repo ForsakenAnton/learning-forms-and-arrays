@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import PersonalPage from './PersonalPage';
 import Cities from './Cities';
+import ValidationForm from './ValidationForm';
 
 function App() {
 
@@ -28,10 +29,17 @@ function App() {
 
   return (
     <div className="App">
+      <h2>Лабораторная работа</h2>
       <PersonalPage user={myInfo}></PersonalPage>
       <hr/>
-      <hr/>
       <Cities cities={cities}></Cities>
+      <hr/>
+      <hr/>
+      <hr/>
+      <hr/>
+      <hr/>
+      <h2>Домашняя работа</h2>
+      <ValidationForm></ValidationForm>
     </div>
   );
 }
