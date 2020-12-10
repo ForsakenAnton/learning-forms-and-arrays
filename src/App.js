@@ -3,6 +3,7 @@ import './App.css';
 import PersonalPage from './PersonalPage';
 import Cities from './Cities';
 import ValidationForm from './ValidationForm';
+import MusicGroupsList from './MusicGroupsList';
 
 function App() {
 
@@ -27,8 +28,16 @@ function App() {
     "Lvov"
   ];
 
+  let musicGroups = [
+    "Dream Theater",
+    "Flying Colors", 
+    "Rage", 
+    "Blind Guardian",  
+  ];
+
   return (
     <div className="App">
+      <p>На фронт энд культурно забил, так что не пугаемся</p>
       <h2>Лабораторная работа</h2>
       <PersonalPage user={myInfo}></PersonalPage>
       <hr/>
@@ -40,6 +49,8 @@ function App() {
       <hr/>
       <h2>Домашняя работа</h2>
       <ValidationForm></ValidationForm>
+      <hr/>
+      <MusicGroupsList musicGroups={musicGroups}></MusicGroupsList>
     </div>
   );
 }

@@ -11,7 +11,7 @@ export default function ValidationForm() {
     const handleSubmit = event => {
         event.preventDefault();
         if (colorName === "red" || colorAge === 'red') { //не самая лучшая форма валидации
-            alert("Че не заполнил форму???");
+            alert("Че не заполнил форму!??");
         } else {
             alert(`Name: ${name} Age: ${age}`);
         }
